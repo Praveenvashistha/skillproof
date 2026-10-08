@@ -161,3 +161,32 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .eyebrow {
+    @apply text-[10px] font-bold uppercase tracking-[0.18em] text-[#43a97f];
+  }
+
+  .avatar {
+    @apply flex h-7 w-7 items-center justify-center rounded-full border-2 border-[#f8faf8] text-[10px] font-bold text-[#31544a];
+  }
+
+  .pill-dark {
+    @apply rounded-full bg-white/10 px-2.5 py-1 text-[10px] font-medium text-[#d8f2e4];
+  }
+
+  .icon-mint { @apply bg-[#e1f6eb] text-[#2d9b70]; }
+  .icon-blue { @apply bg-[#e6efff] text-[#5277b8]; }
+  .icon-amber { @apply bg-[#fff2d9] text-[#b27a23]; }
+  .icon-violet { @apply bg-[#f0e9ff] text-[#8263ba]; }
+  .icon-coral { @apply bg-[#ffe9e2] text-[#c56d52]; }
+  .icon-ink { @apply bg-[#e5ecea] text-[#31554d]; }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
